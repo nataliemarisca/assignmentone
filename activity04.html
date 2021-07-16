@@ -1,0 +1,109 @@
+<html>
+<head> </head>
+<style>
+
+#searchBox{
+  position: absolute;;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#logo{
+  font-size: 5em;
+  color: hsla(235, 50%, 28%, 1);
+  user-select: none;
+}
+
+#searchInput{
+  font-size: calc(0.5vw + 1em);
+  color: hsla(235, 50%, 28%, 1);
+  padding top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 2.5em;
+  border-radius: 3em;
+  border: 1px solid hsla(235, 20%, 20%, 0.8);
+  width: 80%;
+}
+
+#searchInput:hover {
+  filter: drop-shadow(1px 1px 2px hsla(235, 20%, 20%, 0.8));
+}
+
+#searchInput:focus {
+  border: 2px solid hsla(320, 50%, 50%, 0.9));
+  outline: 2px solid hsla(320, 50%, 50%, 0.9));
+}
+
+#searchBTN{
+  font-size: calc(0.5vw + 1em);
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  margin: 0.5em;
+  background color: hsla(235, 20%, 80%, 0.8);
+  color: navy;
+  border: 1px solid hsla(235, 0%, 70%, 0.5);
+}
+
+#searchBTN:hover {
+  filter: drop-shadow(1px 1px 2px hsla(235, 20%, 20%, 0.8));
+  cursor: pointer;
+}
+
+#searchBTN:focus {
+  border: 2px solid hsla(235, 50%, 20%, 0.8);
+  outline: 2px solid hsla(235, 50%, 20%, 0.8);
+  background-color: hsla(235, 50%, 20%, 0.8);
+}
+
+</style>
+<body>
+
+<div id="searchBox">
+  <h1 id="logo"> Goooooogle </h1>
+  <input id="searchInput" type="search" placeholder="search anything"> </input>
+  <button id="searchBTN"> submit </button>
+</div>
+
+<script>
+/*
+1) document, ask where #logo is
+2) write down that address of #logo
+3) visit that address (#logo)
+4) enter (#logo), find the attribute(style > color), change the value(red)
+*/
+
+var myLogo = document.querySelector("#logo");
+// console.log(myLogo.innerHTML);
+// console.log(myLogo.style.color);
+
+myLogo.innerHTML = "Yooohooooo";
+myLogo.style.color = "black";
+
+var myInput = document.querySelector("#searchInput");
+//console.log(myInput.placeholder);
+//console.log(myInput.value);
+
+var myBTN = document.querySelector("#searchBTN");
+// console.log(myBTN.innerHTML);
+
+myBTN.addEventListener("click", changeIT);
+
+var newLogo;
+
+function changeIT() {
+  newLogo = myInput.value;
+  myInput.value = "";
+  myLogo.innerHTML = newLogo;
+
+  myLogo.style.color = yellow;
+  myLogo.style.backgroundColor = black;
+  //myLogo.style.fontSize = "30em";
+}
+
+ </script>
+
+</body>
+</html>
