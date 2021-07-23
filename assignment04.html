@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://UX-UI-Design-Lab.github.io/DH150-UX-WebCoding/icons/css/all.css" rel="stylesheet">
+</head>
+<style>
+
+body {
+  margin: 0;
+  background: hsla(240, 100%, 50%, 0.3);
+  padding: 2em;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: lightblue;
+  padding: 1em;
+  background: hsla(240, 100%, 25%, 1);
+  color: hsla(240, 10%, 20%, 0.9);
+  font-family: 'Bungee Inline', display;
+}
+
+footer {
+  background: beige;
+  padding: 1em;
+  background: hsla(240, 20%, 80%, 1);
+}
+
+#additionalone{
+  margin:1em;
+  padding: 1em;
+  background: hsla(240, 10%, 100%, 0.8);
+}
+
+#additionaltwo{
+  margin:1em;
+  padding: 1em;
+  background: hsla(240, 10%, 100%, 0.8);
+}
+
+#introduction {
+  margin: 1em;
+  padding: 1em;
+  background: hsla(240, 20%, 90%, 0.8);
+}
+
+#handsOnInteractive {
+  margin: 1em;
+  padding: 1em;
+  background: hsla(240, 20%, 95%, 0.6);
+}
+
+#pastExhibitions {
+  margin: 1em;
+  padding: 1em;
+  background: hsla(240, 20%, 95%, 0.6);
+}
+
+
+a{
+  color: hsla(240, 70%, 30%, 0.8);
+  text-decoration: none;
+  border-bottom: 1px dotted hsla(240, 90%, 30%, 0.5);
+}
+
+a:hover {
+  color: hsla(0, 80%, 50%, 1);
+  text-decoration: underline;
+    border-bottom: 1px dotted hsla(240, 90%, 30%, 0.9);
+}
+
+a:focus {
+  font-size: 1.5em;
+  color: hsla(0, 80%, 50%, 1);
+  text-decoration-style: underline;
+  border-color: hsla(0, 100%, 50%, 0.9);
+}
+
+.fab{
+  padding:5px;
+  font-size:44px;
+  width:44px;
+  height:44px;
+  text-decoration: none;
+}
+
+.myButton{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+
+  background-color: #1a47b8;
+  text-decoration: none;
+  color:white;
+  font-size: 1em;
+  padding: 0.8em;
+  border-radius: 3em 0;
+  box-shadow: 5px 1px 2px 2px hsla(233, 20%, 25%, 0.6);
+  /* filter: drop-shadow(1px 1px 2px hsla(223, 20%, 25%, 0.6)); */
+  margin: 10px;
+}
+
+.myButton:hover{
+  background-color: #1a47b8;
+  text-decoration: underline;
+  color:yellow;
+}
+
+.myButton:focus{
+  position: static;
+   width: auto;
+   height: auto;
+
+  background-color: #1a47b8;
+  text-decoration: none;
+  color:white;
+  font-size: 1.2em;
+}
+
+#mySearchInput{
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border: 1px solid hsl(245, 90%, 24%);
+  font-size: 1em;
+  border-radius: 10px 0 0 10px;
+}
+
+#mySearchButton{
+  margin-top: 0.5em;
+  padding: 0.5em;
+  border: 1px solid hsl(245, 90%, 24%, 0.7);
+  font-size: 1em;
+  color: darkblue;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+#mySearchInput:focus{
+  outline: 2px solid hsl(325, 97%,,40%);
+}
+
+#mySearchButton:focus{
+  outline: 2px solid hsl(325, 97%,,40%);
+}
+
+/*aside{
+  visibility: hidden;
+  display: none;
+} */
+
+</style>
+<body>
+  <a class="myButton" href = "#main"> skip to content </a>
+  <header>
+    <a href="https://santamonicahistory.org/exhibits/" target="_blank" style="color:white"> "santa monica history museum logo" </a>
+    <h1 style="color:white"> Keeping History Alive </h1>
+    <nav style="color:white"> <a style="color:white" href="https://santamonicahistory.org/" target="_blank" > Home </a>| <a style="color:white" href="https://santamonicahistory.org/about-us/" target="_blank"> About Us </a> | <a style="color:white" href="https://santamonicahistory.org/history/" target="_blank" > History </a> | <a style="color:white" href="https://santamonicahistory.org/visit-the-museum/plan-a-visit/" target="_blank" > Visit </a> |
+      <a style="color:white" href="https://santamonicahistory.org/exhibits/" target="_blank" > Exhibitions </a>| <a style="color:white" href="https://santamonicahistory.org/upcoming-activities-programs/" target="_blank" > Events </a> | <a style="color:white" href="https://santamonicahistory.org/education/" target="_blank" > Educations </a> |
+      <a style="color:white" href="https://santamonicahistory.org/get-involved/" target="_blank" > Get Involved </a> | <a style="color:white" href="https://santamonicahistory.org/community-partners/" target="_blank" > Our Partners </a> | <a style="color:white" href="https://santamonicahistory.org/support/" target="_blank" > Support </a> |
+        <a style="color:white" href="https://santamonicahistory.org/support/donate-now/" target="_blank" > Make a Donation </a> <br>
+
+<form>
+  <input id="mySearchInput" type="search"></input><button id="mySearchButton">search</button>
+</form>
+
+  </header>
+
+  <aside>
+    <section id="additionalone">
+      <h2> <span> Upcoming Events </span> </h2>
+        <p>
+          Until further notice, all events have been cancelled.
+        </p>
+
+        <ul>
+          <li> Oct. 11 - A Virtual Night at the Museum Annual Gala Dinner </li>
+          <li> Throwback Thursday: A Virtual Lecture Series </li>
+          <li> Free Children's Workshop "Hands on History!" Events cancelled </li>
+          <li> Remembering Santa Monica Events cancelled </li>
+        </ul>
+    </section>
+
+    <section id="additionaltwo">
+      <h2> <span> News </span> </h2>
+
+      <ul>
+        <li> Discover the History: The Santa Monica Pier </li>
+        <li> Discover the History: A Century of Change for Women! </li>
+        <li> Santa Monica Pleasure Pier: A Look Back to 1917 from Today </li>
+        <li> Discover the History, Women's Service Organizations, March 16th! </li>
+      </ul>
+    </section>
+  </aside>
+
+<hr>
+<main id="main">
+
+  <section id="introduction">
+  "Santa Monica a Journey into an Extraordinary Past logo"
+  <h1> PERMANENT EXHIBITIONS </h1>
+The permanent exhibit gallery is designed to serve school children, residents and tourists by offering opportunities for them to  engage in the rich history of Santa Monica. It will provide specific and relevant stories of Santa Monica over time, enhanced with authentic artifacts, fabricated environments, interactive exhibits, audio/video programs and graphic and photographic panels. <br>
+<br>
+<h2> Santa Monica Time Line </h2>
+An introductory time line provides visitors with an orientation and framework from which to view the rest of the exhibition. The time line contains artifacts in cases, photos, text and graphics, which trace the origins and inhabitants of Santa Monica from the earliest Native Americans through the 1930s. Content in this center exhibit focuses on the history leading up to the founding of the city and into its early developments, leveraging real artifacts to help tell important stories. <br>
+<br>
+</section>
+
+<hr>
+
+<section id="handsOnInteractive">
+<h1> <a href="https://santamonicahistory.org/upcoming-activities-programs/family-hands-on-history-day/"> Hands-On Interactive </a>
+  <a href="#handsOnInteractive" tabindex="-1" rel="bookmark">#</a> </h1> <br>
+"Exhibits picture" <br>
+<h2> Donald Douglas Aircraft </h2>
+Visitors enter a replica of the middle section of one of Douglas’ aircraft, setup as if it was under-construction. A diorama shows graphics and photos and artifacts inset into reading rail cases on either side of the plane tell the stories of those who were a part of the creation of Douglas’ aircraft. <br>
+<br>
+<br>
+
+"Exhibits picture" <br>
+<h2> In The Headlines of the Outlook Newspaper </h2>
+Visitors interact with the history of Santa Monica by placing themselves into one of five different “front page” stories from Santa Monica’s past. Visitors sit between a camera and a green screen; they then touch the screen to select a photo option. The camera then takes a photo, and the computer composites the visitor image into a page view and it appears on both screens. <br>
+<br>
+<br>
+
+"Exhibits picture" <br>
+<h2> Then & Now </h2>
+“Then & Now” images allow a simple and immediate understanding and experience of how Santa Monica’s landscape has evolved. It also allows visitors to compare the visual impacts to the landscape. By interacting with the touch screen map of Santa Monica, visitors can select a specific location, activating a video screen that shows the history of that location and how it has developed. <br>
+<br>
+<br>
+</section>
+
+<section id="pastExhibitions">
+  <h1> <a href="https://santamonicahistory.org/all-is-possible-womens-suffrage-in-califronia/"> Past Exhibitions </a>
+    <a href="#pastExhibitions" tabindex="-1" rel="bookmark">#</a> </h1> <br>
+  <ul>
+    <li>  <a href="https://santamonicahistory.org/all-is-possible-womens-suffrage-in-califronia/" target="_blank"> All Is Possible: Women’s Suffrage in California </a>  (February 12, 2020) </li>
+    <li> <a href="https://santamonicahistory.org/pier-1917-fall-exhibition/" target="_blank"> Santa Monica Pleasure Pier: A Look Back to 1917 from Today </a>  (September 3, 2019)  </li>
+    <li> <a href="https://santamonicahistory.org/route-66-summer-exhibition/" target="_blank"> California’s Route 66: Hiding in Plain Sight </a>  (April 4, 2019)  </li>
+    <li> <a href="https://santamonicahistory.org/light-shadow-capturing-early-santa-monica/" target="_blank"> Light & Shadow: Capturing Early Santa Monica </a>  (February 27, 2019) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/from-biplanes-to-bombers/" target="_blank"> From Biplanes to Bombers: Santa Monica Airport’s First 50 Years </a>  (October 2, 2018) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/santa-monica-a-look-back-to-1902-from-today/" target="_blank"> Santa Monica: A Look Back to 1902 from Today </a>  (May 2, 2018) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/people-of-the-earth-life-and-culture-of-the-tongva/" target="_blank"> People of the Earth: Life and Culture of the Tongva </a>  (February 22, 2018) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/4886-2/" target="_blank"> Saint John’s Health Center Exhibit </a>  (November 3, 2017) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/70yearsontheairkcrwnewasever/" target="_blank"> 70 Years on the Air: KCRW is New as Ever </a>  (May 4, 2017) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/shirley-temple-the-depressions-box-office-doll/" target="_blank"> Shirley Temple: The Depression’s Box Office Doll </a>  (April 28, 2017) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/the-journey-of-girl-scouts/" target="_blank"> The Journey of Girl Scouts: Empowering Young Women </a>  (January 7, 2017) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/the-old-soldiers-home-a-veterans-community-by-the-sea/" target="_blank"> The Old Soldiers’ Home: A Veterans’ Community by the Sea </a>  (September 30, 2016) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/shirley-temple-exhibit-2016/" target="_blank"> Shirley Temple: Santa Monica’s Biggest Little Star Exhibit </a>  (February 20, 2016) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/past-exhibits/loveshirleytemple/" target="_blank"> Love, Shirley Temple </a>  (November 10, 2015) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/past-exhibits/culturalmecca/" target="_blank"> Cultural Mecca </a>  (November 10, 2015) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/past-exhibits/warriorsofflames/" target="_blank"> Warriors of Flames </a>  (November 10, 2015) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/cultural-mecca/" target="_blank"> Cultural Mecca </a>  (October 24, 2014) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/past-exhibits/marion-davies-estate/" target="_blank"> Marion Davies Estate </a>  (September 27, 2011) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/past-exhibits/aero-theater/" target="_blank"> Aero Theater </a>  (September 8, 2011) </li>
+    <li> <a href="https://santamonicahistory.org/exhibits/past-exhibits/aero-theater/life-at-the-miramar/" target="_blank"> Life At The Miramar </a>  (August 27, 2011) </li>
+  </ul>
+</section>
+
+  <a class="myButton" href="#main"> back to top </a> <br>
+  </main>
+<hr>
+  <footer>
+
+    <section>
+      <h2> Museum Information </h2>
+        <address>
+          Museum Phone: <br>
+          <a href="tel:(310)395-2290"> (310)395-2290 </a> <br>
+          <br>
+          Museum Address:<br>
+          <a href="https://goo.gl/maps/Pcpvn1tXbw45uJfr7" target="_blank"> 1350 7th Street <br>
+          Santa Monica, CA 90401  </a> <br>
+          <br>
+          Museum Hours: <br>
+          Temporarily closed to the public <br>
+        </address>
+      <ul>
+        <li> Admissions </li>
+        <li> Directions </li>
+        <li> School Tours </li>
+        <li> Group Tours </li>
+      </ul>
+    </section>
+
+    Follow Us <br>
+    <a href="https://www.facebook.com/santamonicahistorymuseum" target="_blank" class="fab fa-facebook-square"></a> | <a href="https://www.instagram.com/santamonicahistorymuseum/" target="_blank" class="fab fa-instagram-square"></a> |
+    <a href="https://www.youtube.com/channel/UC1fbudWmDtrKe_vZ3ECJovw" target="_blank" class="fab fa-youtube-square"></a> | <a href="https://twitter.com/smhistorymuseum" target="_blank" class="fab fa-twitter-square"></a> <br>
+    <a href="https://santamonicahistory.org/contact-us/" target="_blank"> Contact Us </a> | <a href="https://santamonicahistory.org/home/terms-of-use" target="_blank"> Terms of Use </a> | <a href="https://santamonicahistory.org/home/privacy" target="_blank"> Privacy </a> <br>
+
+    <h2> E-Newsletter </h2>
+    Receive announcements of upcoming lectures, programs and events by signing up for our e-newsletter. <br>
+    Signup! <br>
+    <hr>
+    Copyright © 1975-2020, Santa Monica History Museum, All rights reserved.
+    <hr>
+    <small>
+      This website is a markup of the original <a href="https://santamonicahistory.org/exhibits/" target="_blank"> Santa Monica History Museum. </a> This work is only for the assignment04, DH150: Web-coding for UX by Natalie Anggawidjaja. Here is <a href="https://nataliemarisca.github.io/assignmentone/assignment03-01_audit.png" target="_blank"> the accessibility/seo audit result. </a>
+      <hr>
+      I conducted a manual testing to check the compliance to <a href="https://www.w3.org/WAI/WCAG21/quickref/#principle2" target="_blank"> WCAG2.1 guideline on operable interface </a>. The original Santa Monica History Museum site has no focus-visibility on header and general poor focus-visibility. This mockup site resolved those issues by rearranging semantics htmls and css codes.
+      The result of the keyboard-accessibility manual testing of both the original website and my revision is attached <a href="https://docs.google.com/spreadsheets/d/1SWHGL6nWhqjOJZ5yUiPOLIL7dJKU6O_-2M7-W7QmYk0/edit#gid=0" target="_blank"> here </a>.
+    </small>
+
+  </footer>
+
+<script> </script>
+</body>
+</html>
